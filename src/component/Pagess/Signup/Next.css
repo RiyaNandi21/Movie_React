@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.next-container {
+  background-color: #ffffff;
+  width: 350px;
+  max-height: 70vh;
+  padding: 35px;
+  margin-bottom: 100px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: auto;
+}
+
+.next-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.next-container input,
+.next-container textarea,
+.next-container select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.next-container input:focus,
+.next-container textarea:focus,
+.next-container select:focus {
+  border-color: #764ba2;
+  outline: none;
+}
+
+.next-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.next-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #764ba2;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-container button:hover {
+  background-color: #5a3492;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .next-container {
+    width: 90%;
+    max-height: 80vh;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .next-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .next-container input,
+  .next-container textarea,
+  .next-container select {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .next-container button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-container {
+    width: 95%;
+    max-height: 85vh;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .next-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .next-container input,
+  .next-container textarea,
+  .next-container select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .next-container button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+  

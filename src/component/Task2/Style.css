@@ -1,0 +1,100 @@
+.container {
+  width: 320px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box {
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.login-box button {
+  background: blue;
+  color: white;
+}
+
+.login-box p {
+  text-align: center;
+  margin-top: 10px;
+}
+.signup-box {
+  background: #eaffea;
+}
+
+.signup-box h2 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.signup-box button {
+  background: green;
+  color: white;
+}
+
+.signup-box p {
+  text-align: center;
+  margin-top: 10px;
+}
+.container .login-box
+{
+  justify-content: center;
+  padding: 10px;
+} 
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 150px; 
+  font-weight: bold;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 6px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+

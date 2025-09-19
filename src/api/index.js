@@ -1,0 +1,1 @@
+export const API = "https://movie-handler-api.onrender.com/api";

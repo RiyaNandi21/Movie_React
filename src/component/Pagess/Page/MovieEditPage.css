@@ -1,0 +1,258 @@
+/* .movie-details {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.movie-details h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.movie-details label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.movie-details input,
+.movie-details textarea,
+.movie-details select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.movie-details input:focus,
+.movie-details textarea:focus,
+.movie-details select:focus {
+  border: 1px solid #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+.movie-details textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.update-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.update-btn:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+  transform: scale(1.02);
+}
+
+.update-btn:active {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+  .movie-details {
+    padding: 15px;
+    max-height: none; 
+  }
+} */
+
+/* MovieEditPage.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.movie-edit {
+  max-width: 1000px;
+  /* margin: 80px auto 40px auto;  */
+  padding: 30px;
+  margin-top: 1100px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+.movie-edit h1 {
+
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.movie-edit label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+
+.movie-edit input,
+.movie-edit textarea,
+.movie-edit select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  background-color: #fdfdfd;
+  box-sizing: border-box;
+}
+
+.movie-edit input:focus,
+.movie-edit textarea:focus,
+.movie-edit select:focus {
+  border-color: #667eea;
+  box-shadow: 0px 0px 6px rgba(102, 126, 234, 0.4);
+  outline: none;
+}
+
+
+.movie-edit textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.update-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+/* .back-btn {
+  width: 30%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+.update-btn:hover {
+  background: linear-gradient(135deg, #5a6fe1, #6d4199);
+  transform: translateY(-2px);
+} */
+
+.back-btn {
+    width:30%;
+  background: #e5e7eb;
+  color: #111827;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #d1d5db;
+}
+
+@media (max-width: 1024px) {
+  .movie-edit {
+    max-width: 90%;
+    padding: 25px;
+    margin: 70px auto 30px auto;   
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-edit {
+    max-width: 95%;
+    padding: 20px;
+    margin: 60px auto 25px auto;
+  }
+
+  .movie-edit h1 {
+    font-size: 24px;
+  }
+
+  .update-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-edit {
+    max-width: 96%;
+    padding: 15px;
+    margin: 50px auto 20px auto;
+  }
+
+  .movie-edit h1 {
+    font-size: 20px;
+  }
+
+  .movie-edit label {
+    font-size: 14px;
+  }
+
+  .movie-edit input,
+  .movie-edit textarea,
+  .movie-edit select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .update-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

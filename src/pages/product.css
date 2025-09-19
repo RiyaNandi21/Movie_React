@@ -1,0 +1,132 @@
+/* .body{
+  background-color: #ffffff;
+} */
+
+.product-container {
+  /* background-color: #e1e6eb;  */
+  
+  padding: 100px;
+  min-height: calc(100vh - 120px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  flex-direction: column;
+  /* background-color:white; */
+  /* margin-bottom: 120px; */
+}
+
+.product-details {
+  display: flex;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 50px;
+}
+
+.product-details img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-info {
+  max-width: 500px;
+}
+
+.product-info h2 {
+  color: #333;
+}
+
+.product-info h3 {
+  color: #555;
+  margin-top:2px;
+}
+
+.product-info p {
+  margin-top: 20px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .product-container {
+    padding: 60px 20px;
+  }
+
+  .product-details {
+    gap: 10px;
+    padding: 30px;
+  }
+
+  .product-details img {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .product-container {
+    padding: 70px 15px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .product-details {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .product-details img {
+    width: 220px;
+    height: 280px;
+  }
+
+  .product-info {
+    max-width: 100%;
+  }
+
+  .product-info h2 {
+    font-size: 19px;
+  }
+
+  .product-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-container{
+    margin-top: 100px;
+    padding-top:40px
+  }
+  .product-details{
+     margin-top: 100px;
+    padding-top:40px
+  }
+  .product-details img {
+    width: 180px;
+    height: 250px;
+  }
+
+  .product-info h2 {
+    font-size: 15px;
+  }
+.product-info h3{
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+  .product-info p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}

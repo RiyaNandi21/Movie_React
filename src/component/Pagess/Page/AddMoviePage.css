@@ -1,0 +1,62 @@
+.add-movie-page {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 90px;
+}
+
+.add-movie-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-movie-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-movie-page input,
+.add-movie-page textarea,
+.add-movie-page select {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-movie-page button {
+  
+  width:100px;
+  height:30px;
+  /* padding: 10px; */
+
+  margin-bottom: 10px;
+  /* border: none; */
+  border-radius: 4px;
+  border-color:  #1565c0;;
+  /* background-color: #94b9e4; */
+  background-color:white;
+  color: #1565c0;;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-movie-page button:hover {
+  background-color: #9dbfe6;
+}
+
+.add-movie-page h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+button.movie_submit{
+ width:100%;
+ background-color: #1565c0;
+ color:white;
+}
+button.movie_submit:hover{
+  background-color:#1e528d;
+}
