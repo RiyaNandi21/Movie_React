@@ -1,90 +1,3 @@
-/* .movie-details {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-  overflow-y: auto;
-  max-height: 90vh;
-}
-
-.movie-details h1 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 25px;
-}
-
-.movie-details label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #444;
-}
-
-.movie-details input,
-.movie-details textarea,
-.movie-details select {
-  width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 18px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 15px;
-  outline: none;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box; 
-}
-
-.movie-details input:focus,
-.movie-details textarea:focus,
-.movie-details select:focus {
-  border: 1px solid #667eea;
-  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
-}
-
-.movie-details textarea {
-  resize: vertical;
-  min-height: 90px;
-}
-
-.update-btn {
-  width: 100%;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #fff;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s ease;
-}
-
-.update-btn:hover {
-  background: linear-gradient(135deg, #5a67d8, #6b46c1);
-  transform: scale(1.02);
-}
-
-.update-btn:active {
-  transform: scale(0.98);
-}
-
-
-@media (max-width: 768px) {
-  .movie-details {
-    padding: 15px;
-    max-height: none; 
-  }
-} */
-
-/* MovieEditPage.css */
-
 html, body {
   margin: 0;
   padding: 0;
@@ -98,10 +11,10 @@ html, body {
 
 
 .movie-edit {
-  max-width: 1000px;
-  /* margin: 80px auto 40px auto;  */
+  /* max-width: 1000px; */
+  width:700px;
   padding: 30px;
-  margin-top: 1100px;
+  margin-top: 1050px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
@@ -110,10 +23,11 @@ html, body {
 
 
 .movie-edit h1 {
-
   text-align: center;
-  margin-bottom: 25px;
-  color: #2c3e50;
+  margin-bottom: 15px;
+  margin-top:-10px;
+  color: #1abc9c;
+  font-style: italic;
   font-size: 28px;
   font-weight: bold;
 }
@@ -169,28 +83,10 @@ html, body {
   transition: 0.3s ease;
 }
 
-/* .back-btn {
-  width: 30%;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border: none;
-  color: white;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: 0.3s ease;
-}
-.update-btn:hover {
-  background: linear-gradient(135deg, #5a6fe1, #6d4199);
-  transform: translateY(-2px);
-} */
-
 .back-btn {
-    width:30%;
-  background: #e5e7eb;
-  color: #111827;
+  width:100px;
+  background: #7397df;
+  color: #fbfdff;
   padding: 8px 16px;
   border: none;
   border-radius: 8px;
@@ -201,7 +97,10 @@ html, body {
 }
 
 .back-btn:hover {
-  background: #d1d5db;
+  background: #7492c0;
+}
+.required{
+  color: rgb(151, 53, 53);
 }
 
 @media (max-width: 1024px) {

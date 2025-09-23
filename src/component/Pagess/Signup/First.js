@@ -95,18 +95,6 @@ export default function SignupForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {/* <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          value={confirm}
-          onChange={(e) => setConfirm(e.target.value)}
-        /> */}
         <div className="password-wrapper">
           <input
             type={showPassword ? "text" : "password"}

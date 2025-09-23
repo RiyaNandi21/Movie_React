@@ -1,22 +1,4 @@
 
-// import { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
-// import Body from "./BodyPage";
-// import "./DashBoardPage.css";
-
-// import GoToTop from "../../GoToTop";
-
-// export default function DashBoard() {
-
-//   return (
-//     <div>
-//         <>
-//           <Body />
-//           <GoToTop />
-//         </>
-//     </div>
-//   );
-// }
 import { useEffect, useState } from "react";
 import { getMovies } from "../../../api/movie";
 

@@ -12,11 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="/signup" element={<First />} />
-        <Route path="/Next" element={<Next />} />
-        {/* <Route path="/Dashboard" element={<DashBoard />} />
-        <Route path="/dashboard/movies/:id" element={<MovieDetails />}/>
-        <Route path="/movies/:id/edit" element={<MovieEditPage />} /> */}
-        
+        <Route path="/Next" element={<Next />} /> 
         <Route path="/Dashboard" element={
           <ProtectedRoute><DashBoard /></ProtectedRoute>
         }

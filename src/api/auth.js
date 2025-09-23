@@ -10,7 +10,7 @@ export const register = async (details) => {
     });
     return response.data;
   } catch (error) {
-    console.error("Registration error:", error.response ?.data || error.message);
+    console.error("Registration error:", error.response?.data || error.message);
     throw error;
   }
 };
@@ -77,6 +77,5 @@ export const logout= async (token) => {
   finally{
     localStorage.removeItem("token");
     localStorage.removeItem("userData");
-    // localStorage.removeItem("userId");
   }
 };

@@ -43,14 +43,13 @@ export default function MovieEditPage() {
     <div className="movie-edit">
        <button onClick={() => navigate(-1)} className="back-btn"> Back</button>
       <h1>Edit Movie</h1>
-      <label>Title:</label>
+      <label>Title<span className="required">*</span>:</label>
       <input
         type="text"
         value={formData.title || ""}
         onChange={(e) => setFormData({ ...formData, title: e.target.value })}
       />
-
-      <label>Description:</label>
+      <label>Description<span className="required">*</span>:</label>
       <textarea
         value={formData.description || ""}
         onChange={(e) =>
@@ -58,7 +57,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Genre (comma separated):</label>
+      <label>Genre <span className="required">*</span>(comma separated):</label>
       <input
         type="text"
         value={formData.genre?.join(", ") || ""}
@@ -70,7 +69,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Director:</label>
+      <label>Director<span className="required">*</span>:</label>
       <input
         type="text"
         value={formData.director || ""}
@@ -79,7 +78,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Cast (name-role; separated by ; ):</label>
+      <label>Cast <span className="required">*</span>(name-role; separated by ; ):</label>
       <input
         type="text"
         value={
@@ -96,7 +95,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Rating:</label>
+      <label>Rating<span className="required">*</span>:</label>
       <input
         type="number"
         step="0.1"
@@ -106,7 +105,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Release Date:</label>
+      <label>Release Date<span className="required">*</span>:</label>
       <input
         type="date"
         value={formData.releaseDate?.split("T")[0] || ""}
@@ -115,7 +114,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Language:</label>
+      <label>Language<span className="required">*</span>:</label>
       <input
         type="text"
         value={formData.language || ""}
@@ -124,7 +123,7 @@ export default function MovieEditPage() {
         }
       />
 
-      <label>Country:</label>
+      <label>Country<span className="required">*</span>:</label>
       <input
         type="text"
         value={formData.country || ""}
@@ -162,7 +161,7 @@ export default function MovieEditPage() {
         <option value="inactive">Inactive</option>
       </select>
 
-      <label>Poster URL:</label>
+      <label>Poster URL<span className="required">*</span>:</label>
       <input
         type="text"
         value={formData.posterUrl || ""}
@@ -174,9 +173,6 @@ export default function MovieEditPage() {
       <button onClick={handleUpdate} className="update-btn">
         Update Movie
       </button>
-       {/* <button onClick={navigate="/-1"} className="back-btn">
-        Back
-      </button> */}
     </div>
   );
 }

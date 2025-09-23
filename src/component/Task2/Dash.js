@@ -1,49 +1,3 @@
-
-// import { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
-// import Header from "./Header.js";
-// import Body from "./Body.js";
-// import Footer from "./Footer.js";
-
-// import GoToTop from "../GoToTop.jsx";
-// import Product from "../../pages/product.js";
-
-// export default function DashBoard() {
-//   const [user, setUser] = useState(null);
-//   const [searchTerm, setSearchTerm] = useState("");
-//   const navigate = useNavigate();
-
-//   useEffect(() => {
-//     const storedUser = JSON.parse(localStorage.getItem("user"));
-//     if (!storedUser) {
-//       navigate("/signup");
-//     } else {
-//       setUser(storedUser);
-//     }
-//   }, [navigate]);
-
-//   return (
-//     <div>
-//       {user && (
-//         <>
-//           <Header user={user} setSearchTerm={setSearchTerm} />
-//           <Body searchTerm={searchTerm}/>
-//           <GoToTop/>
-//           <Footer />
-//         </>
-//       )}
-//     </div>
-//   );
-// }
-// export default function Dash(){
-//   return(
-//     <div> 
-//       <Body />
-//       <GoToTop />
-//     </div>
-//   );
-// } 
-
 import { useEffect, useState } from "react";
 import { getMovies, getTopRatedMovies, getLatestMovies, getMoviesByGenre } from "../../api/movie";
 import { useNavigate } from "react-router-dom";
@@ -72,10 +26,19 @@ export default function DashboardPage() {
       } else if (filter === "genre" && genre) {
         res = await getMoviesByGenre(genre);
       } else {
-        res = await getMovies({ search });
+        res = await getMovies();
       }
 
-      setMovies(res.data || res); 
+      let moviesData=res.data || res;
+
+      if(search.trim() !==""){
+        moviesData=moviesData.filter((movie) => 
+        movie.title.toLowerCase().includes(search.toLowerCase())
+      );
+      }
+
+
+      setMovies(moviesData); 
     } catch (err) {
       setError("Failed to load movies.");
     } finally {
@@ -97,7 +60,6 @@ export default function DashboardPage() {
 
   return (
     <div className="dashboard">
-      {/* Search */}
       <form onSubmit={handleSearch} className="search-bar">
         <input
           type="text"
@@ -108,7 +70,6 @@ export default function DashboardPage() {
         <button type="submit">Search</button>
       </form>
 
-      {/* Filter Dropdown */}
       <div className="filter-bar">
         <select value={filter} onChange={(e) => setFilter(e.target.value)}>
           <option value="all">All Movies</option>
@@ -129,7 +90,6 @@ export default function DashboardPage() {
         )}
       </div>
 
-      {/* Movies Grid */}
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie._id} className="movie-card">
@@ -157,3 +117,4 @@ export default function DashboardPage() {
     </div>
   );
 }
+

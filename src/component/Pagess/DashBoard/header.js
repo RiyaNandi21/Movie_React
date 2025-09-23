@@ -20,9 +20,20 @@ export default function Header({ toggleSidebar }) {
     };
   }, []);
 
-  const handleLogout = () => {
-   logout();
-   window.location.href="/";
+  // const handleLogout = () => {
+  //  logout();
+  //  window.location.href="/";
+  // };
+
+  const handleLogout = async () =>{
+    try{
+      const token=localStorage.getItem("token");
+      await logout(token);
+      window.location.href="/";
+    }
+    catch(error){
+      console.error("logout error:",error);
+    }
   };
 
   return (

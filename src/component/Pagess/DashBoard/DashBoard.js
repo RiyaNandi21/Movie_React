@@ -10,7 +10,6 @@ import Dash from "../../Task2/Dash";
 import ProfilePage from "../Page/ProfilePage";
 import ChangePassword from "../Page/ChangePassword";
 import AddMoviePage from "../Page/AddMoviePage";
-// import MovieDetails from "./components/Pagess/MovieDetails";
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState("dash");
@@ -35,8 +34,6 @@ export default function Dashboard() {
           {activeTab === "profile" && <ProfilePage />}
           {activeTab === "ChangePassword" && <ChangePassword />}
           {activeTab === "AddMoviePage" && <AddMoviePage />}
-          
-
         </div>
         <GoToTop />
         <Footer />
